@@ -59,13 +59,13 @@ public class NoGuavaListsNewArrayList extends Recipe {
 
                 private final JavaTemplate newArrayListIterable =
                     JavaTemplate.builder("new ArrayList<>(#{any(java.util.Collection)})")
-                    .imports("java.util.ArrayList")
-                    .build();
+                        .imports("java.util.ArrayList")
+                        .build();
 
                 private final JavaTemplate newArrayListCapacity =
                     JavaTemplate.builder("new ArrayList<>(#{any(int)})")
-                    .imports("java.util.ArrayList")
-                    .build();
+                        .imports("java.util.ArrayList")
+                        .build();
 
                 @Override
                 public J visitMethodInvocation(J.MethodInvocation method, ExecutionContext executionContext) {

@@ -109,7 +109,7 @@ class NoGuavaListsNewArrayListTest implements RewriteTest {
                     List<Integer> cardinalsWorldSeries = Lists.newArrayListWithCapacity(2);
                 }
                 """,
-            """
+                """
                 import java.util.ArrayList;
                 import java.util.List;
                 
